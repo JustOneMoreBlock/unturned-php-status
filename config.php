@@ -12,34 +12,34 @@ $data_ad_slot = "2146448098";
 
 $Status = array(
     array(
-        Name => "ServerName | PvE1",
-        HostName => "pve1.ut.yourdomain.com",
-        Port => "27015",
-        Mode => "PVE",
+        "Name"     => "ServerName | PvE1",
+        "HostName" => "pve1.ut.yourdomain.com",
+        "Port"     => "27015",
+        "Mode"     => "PVE",
         //unturned-servers.net API Key
-        API => "",
-        Vote1 => "http://unturned-servers.net/server/<ID NUMBER>/vote",
-        Vote2 => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"        
+        "API"      => "",
+        "Vote1"    => "http://unturned-servers.net/server/<ID NUMBER>/vote",
+        "Vote2"    => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"
     ),
     array(
-        Name => "ServerName | PvP1",
-        HostName => "pvp1.ut.yourdomain.com",
-        Port => "27015",
-        Mode => "PVP",
+        "Name"     => "ServerName | PvP1",
+        "HostName" => "pvp1.ut.yourdomain.com",
+        "Port"     => "27015",
+        "Mode"     => "PVP",
         //unturned-servers.net API Key
-        API => "",
-        Vote1 => "http://unturned-servers.net/server/<ID NUMBER>/vote",
-        Vote2 => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"       
+        "API"      => "",
+        "Vote1"    => "http://unturned-servers.net/server/<ID NUMBER>/vote",
+        "Vote2"    => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"    
     ),
     array(
-        Name => "ServerName | Arena1",
-        HostName => "arena1.ut.yourdomain.com",
-        Port => "27015",
-        Mode => "ARENA",
+        "Name"     => "ServerName | Arena1",
+        "HostName" => "arena1.ut.yourdomain.com",
+        "Port"     => "27015",
+        "Mode"     => "ARENA",
         //unturned-servers.net API Key
-        API => "",
-        Vote1 => "http://unturned-servers.net/server/<ID NUMBER>/vote",
-        Vote2 => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"       
+        "API"      => "",
+        "Vote1"    => "http://unturned-servers.net/server/<ID NUMBER>/vote",
+        "Vote2"    => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"
     )
 );
 
