@@ -1,6 +1,7 @@
 <?php
 
 $Title = "Unturned Server Status";
+$RemoveName = "ServerName.com | ";
 
 $News = "<a href=\"#\" target=\"_blank\">Status Updates</a>";
 
