@@ -69,7 +69,7 @@ for ($Config = 0; $Config < count($Status); $Config++) {
     $TotalPlayers = $TotalServers * 24;
     $Name         = $Status[$Config]["Name"];
     $HostName     = $Status[$Config]["HostName"];
-    $CutName      = str_replace($RemoveName, "", $Name);
+    $ID           = $Status[$Config]["ID"];
     $Mode         = $Status[$Config]["Mode"];
     $Port         = $Status[$Config]["Port"];
     $Vote1        = $Status[$Config]["Vote1"];
@@ -131,21 +131,21 @@ for ($Config = 0; $Config < count($Status); $Config++) {
             <h1 class="panel-title center"><?php echo $Name; ?></h1> <div align="center" class="large"><?php echo $HostName; ?> &nbsp; <button class="btn-copy btn btn-xs btn-primary" data-clipboard-text="<?php echo $HostName; ?>"><i class="fa fa-clipboard"></i></button></div>
             <div class="btn-group btn-group-xs btn-group-justified click-actions" role="group">
               <span class="btn btn-xs btn-success" style="width:70%;">Online | Players:&nbsp;<?php echo "".$Info["Players"]."/".$Info["MaxPlayers"]."";?></span>
-              <a class="btn btn-default" style="width:30%;" role="button" data-toggle="collapse" href="#Unturned<?php echo $CutName;?>Vote" aria-expanded="false" aria-controls="Unturned<?php echo $CutName;?>Vote"><i class="fa fa-thumbs-up"></i>&nbsp;Vote</a>
+              <a class="btn btn-default" style="width:30%;" role="button" data-toggle="collapse" href="#Unturned<?php echo $ID;?>Vote" aria-expanded="false" aria-controls="Unturned<?php echo $ID;?>Vote"><i class="fa fa-thumbs-up"></i>&nbsp;Vote</a>
             </div>
             <div class="btn-group btn-group-xs btn-group-justified click-actions" role="group">
-              <a class="btn btn-info" role="button" data-toggle="collapse" href="#Unturned<?php echo $CutName;?>" aria-expanded="false" aria-controls="Unturned<?php echo $CutName;?>">Click for More Info</a>
+              <a class="btn btn-info" role="button" data-toggle="collapse" href="#Unturned<?php echo $ID;?>" aria-expanded="false" aria-controls="Unturned<?php echo $ID;?>">Click for More Info</a>
               <a href="steam://connect/<?php echo $HostName; ?>:<?php echo $SourceQuery; ?>" class="btn btn-warning">Click to Connect</a>
             </div>
           </div>
           <ul class="list-group">
-            <div class="collapse" id="Unturned<?php echo $CutName;?>Vote">
+            <div class="collapse" id="Unturned<?php echo $ID;?>Vote">
               <a href="<?php echo $Vote1; ?>" target="_blank" class="list-group-item list-group-item-warning"><i class="fa fa-comments"></i>&nbsp;Vote on unturned-servers.net</a>
               <a href="<?php echo $Vote2; ?>" target="_blank" class="list-group-item list-group-item-warning"><i class="fa fa-comments"></i>&nbsp;Vote on unturnedls.com</a>
             </div>
-            <div class="collapse" id="Unturned<?php echo $CutName;?>">
-              <li class="list-group-item"><i class="fa fa-group"></i>&nbsp;Players: <b><?php echo "".$Info["Players"]."/".$Info["MaxPlayers"]."";?></b>&nbsp;&nbsp;&nbsp;<span class="label label-info" role="button" data-toggle="collapse" href="#Unturned<?php echo $CutName;?>Players" aria-expanded="false" aria-controls="Unturned<?php echo $CutName;?>Players">Full List</span></li>
-                <div class="collapse" id="Unturned<?php echo $CutName;?>Players">
+            <div class="collapse" id="Unturned<?php echo $ID;?>">
+              <li class="list-group-item"><i class="fa fa-group"></i>&nbsp;Players: <b><?php echo "".$Info["Players"]."/".$Info["MaxPlayers"]."";?></b>&nbsp;&nbsp;&nbsp;<span class="label label-info" role="button" data-toggle="collapse" href="#Unturned<?php echo $ID;?>Players" aria-expanded="false" aria-controls="Unturned<?php echo $ID;?>Players">Full List</span></li>
+                <div class="collapse" id="Unturned<?php echo $ID;?>Players">
                   <table class="table table-condensed table-responsive no-margin">
                     <tbody>
                     <?php if( !empty( $Players ) ): ?>
@@ -164,8 +164,8 @@ for ($Config = 0; $Config < count($Status); $Config++) {
                 </div>
               <li class="list-group-item"><i class="fa fa-gear"></i>&nbsp;Unturned: <b><?php echo $Info["Version"]; ?></b></li>
               <li class="list-group-item"><i class="fa fa-rocket"></i>&nbsp;Rocket: <b><?php echo $Version; ?></b></li>
-              <li class="list-group-item"><i class="fa fa-product-hunt"></i>&nbsp;Rocket Plugins: <b><?php echo $TotalPlugins; ?></b>&nbsp;&nbsp;&nbsp;<span class="label label-info" role="button" data-toggle="collapse" href="#Unturned<?php echo $CutName;?>Plugins" aria-expanded="false" aria-controls="Unturned<?php echo $CutName;?>Plugins">Full List</span></li>
-                <div class="collapse" id="Unturned<?php echo $CutName;?>Plugins">
+              <li class="list-group-item"><i class="fa fa-product-hunt"></i>&nbsp;Rocket Plugins: <b><?php echo $TotalPlugins; ?></b>&nbsp;&nbsp;&nbsp;<span class="label label-info" role="button" data-toggle="collapse" href="#Unturned<?php echo $ID;?>Plugins" aria-expanded="false" aria-controls="Unturned<?php echo $ID;?>Plugins">Full List</span></li>
+                <div class="collapse" id="Unturned<?php echo $ID;?>Plugins">
                   <table class="table table-condensed table-responsive no-margin">
                     <tbody>
                     <tr>
@@ -198,15 +198,15 @@ for ($Config = 0; $Config < count($Status); $Config++) {
             <h1 class="panel-title center"><?php echo $Name; ?> <p class="small"><?php echo $HostName; ?></p></h1>
             <div class="btn-group btn-group-xs btn-group-justified click-actions" role="group">
               <span class="btn btn-xs btn-danger" style="width:70%;">Offline</span>
-              <a class="btn btn-default" style="width:30%;" role="button" data-toggle="collapse" href="#Unturned<?php echo $CutName;?>Vote" aria-expanded="false" aria-controls="Unturned<?php echo $CutName;?>Vote"><i class="fa fa-thumbs-up"></i>&nbsp;Vote</a>
+              <a class="btn btn-default" style="width:30%;" role="button" data-toggle="collapse" href="#Unturned<?php echo $ID;?>Vote" aria-expanded="false" aria-controls="Unturned<?php echo $ID;?>Vote"><i class="fa fa-thumbs-up"></i>&nbsp;Vote</a>
             </div>
             <div class="btn-group btn-group-xs btn-group-justified click-actions" role="group">
-              <a class="btn btn-info disabled" role="button" data-toggle="collapse" href="#Unturned<?php echo $CutName;?>" aria-expanded="false" aria-controls="Unturned<?php echo $CutName;?>">Click for More Info</a>
+              <a class="btn btn-info disabled" role="button" data-toggle="collapse" href="#Unturned<?php echo $ID;?>" aria-expanded="false" aria-controls="Unturned<?php echo $ID;?>">Click for More Info</a>
               <a href="#" class="btn btn-warning disabled">Click to Connect</a>
             </div>
           </div>
           <ul class="list-group">
-            <div class="collapse" id="Unturned<?php echo $CutName;?>Vote">
+            <div class="collapse" id="Unturned<?php echo $ID;?>Vote">
               <a href="<?php echo $Vote1; ?>" target="_blank" class="list-group-item list-group-item-warning"><i class="fa fa-comments"></i>&nbsp;Vote on unturned-servers.net</a>
               <a href="<?php echo $Vote2; ?>" target="_blank" class="list-group-item list-group-item-warning"><i class="fa fa-comments"></i>&nbsp;Vote on unturnedls.com</a>
             </div>
