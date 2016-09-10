@@ -14,7 +14,7 @@ include("config.php");
   <script src="js/bootstrap.min.js"></script>
 
 <?php
-$action = $_GET["toggle"];
+$action = filter_input(INPUT_GET, 'toggle');
 if($action == "stopRefresh") {
 echo "";
 } else {
@@ -83,7 +83,7 @@ for ($Config = 0; $Config < count($Status); $Config++) {
     $Rocket  = Array();
     
     try {
-        $Query->Connect($Status[$Config]["HostName"], $SourceQuery, 1, 'SourceQuery :: SOURCE');
+        $Query->Connect($HostName, $SourceQuery, 1, 'SourceQuery :: SOURCE');
         $Info    = $Query->GetInfo();
         $Players = $Query->GetPlayers();
         $Rocket  = $Query->GetRules();
@@ -268,5 +268,3 @@ for ($Config = 0; $Config < count($Status); $Config++) {
     
 </body>
 </html>
-
-
