@@ -19,5 +19,5 @@ Web server must allow UDP connections
 - GlyphIcons
 
 # Credits
-Concept by: Cory (https://twitter.com/JustPlayHere)
-Design by: Keith (https://github.com/KeithBohler)
+- Concept by: Cory (https://twitter.com/JustPlayHere)
+- Design by: Keith (https://github.com/KeithBohler)
