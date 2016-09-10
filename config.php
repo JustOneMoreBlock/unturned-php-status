@@ -3,7 +3,6 @@
 error_reporting( error_reporting() & ~E_NOTICE );
 
 $Title = "Unturned Server Status";
-$RemoveName = "ServerName.com | ";
 
 $News = "<a href=\"#\" target=\"_blank\">Status Updates</a>";
 
@@ -14,8 +13,9 @@ $data_ad_slot = "2146448098";
 
 $Status = array(
     array(
-        "Name"     => "ServerName | PvE1",
-        "HostName" => "pve1.ut.yourdomain.com",
+        "ID"       => "PvE1",
+        "Name"     => "Russia PvE|Kits|TPA|CallVote|Home|Vault|AirDrop",
+        "HostName" => "pve1.ut.justplayhere.com",
         "Port"     => "27015",
         "Mode"     => "PVE",
         //unturned-servers.net API Key
@@ -24,8 +24,9 @@ $Status = array(
         "Vote2"    => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"
     ),
     array(
-        "Name"     => "ServerName | PvP1",
-        "HostName" => "pvp1.ut.yourdomain.com",
+        "ID"       => "PvP1",
+        "Name"     => "Russia PvE|Kits|TPA|CallVote|Home|Vault|AirDrop",
+        "HostName" => "pvp1.ut.justplayhere.com",
         "Port"     => "27015",
         "Mode"     => "PVP",
         //unturned-servers.net API Key
@@ -34,8 +35,9 @@ $Status = array(
         "Vote2"    => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"    
     ),
     array(
-        "Name"     => "ServerName | Arena1",
-        "HostName" => "arena1.ut.yourdomain.com",
+        "ID"       => "Arena1",
+        "Name"     => "Russia PvE|Kits|TPA|CallVote|Home|Vault|AirDrop",
+        "HostName" => "arena1.ut.justplayhere.com",
         "Port"     => "27015",
         "Mode"     => "ARENA",
         //unturned-servers.net API Key
