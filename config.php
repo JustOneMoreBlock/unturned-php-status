@@ -1,4 +1,6 @@
 <?php
+//Let's just suppress rest of the errors for now.
+error_reporting( error_reporting() & ~E_NOTICE );
 
 $Title = "Unturned Server Status";
 $RemoveName = "ServerName.com | ";
