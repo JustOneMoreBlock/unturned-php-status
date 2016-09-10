@@ -1,0 +1,9 @@
+body{
+	margin-top: 30px;
+	background-color: rgb(0, 121, 191);
+}
+.click-actions {margin-top:5px;}
+.center {text-align:center;}
+.no-margin {margin:0 auto;}
+.stats {margin-bottom:5px; font-size:25px;}
+h1{font-weight:bold;}
