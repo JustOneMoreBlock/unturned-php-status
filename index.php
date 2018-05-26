@@ -95,7 +95,7 @@ for ($Config = 0; $Config < count($Status); $Config++) {
     $Query->Disconnect();
     
 
-    if ($Info["ModDesc"] >= "Unturned") {
+    if ($Info["GameID"] >= "304930") {
         
         $GameTags    = explode(',', $Info["GameTags"]);
         $Combat      = $GameTags["0"];
@@ -162,7 +162,7 @@ for ($Config = 0; $Config < count($Status); $Config++) {
                     </tbody>
                   </table>
                 </div>
-              <li class="list-group-item"><i class="fa fa-gear"></i>&nbsp;Unturned: <b><?php echo $Info["Version"]; ?></b></li>
+              <li class="list-group-item"><i class="fa fa-gear"></i>&nbsp;Unturned: <b><?php echo $Rocket["unturned"]; ?></b></li>
               <li class="list-group-item"><i class="fa fa-rocket"></i>&nbsp;Rocket: <b><?php echo $Version; ?></b></li>
               <li class="list-group-item"><i class="fa fa-product-hunt"></i>&nbsp;Rocket Plugins: <b><?php echo $TotalPlugins; ?></b>&nbsp;&nbsp;&nbsp;<span class="label label-info" role="button" data-toggle="collapse" href="#Unturned<?php echo $ID;?>Plugins" aria-expanded="false" aria-controls="Unturned<?php echo $ID;?>Plugins">Full List</span></li>
                 <div class="collapse" id="Unturned<?php echo $ID;?>Plugins">
