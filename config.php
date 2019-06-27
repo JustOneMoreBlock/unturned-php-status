@@ -8,40 +8,42 @@ $News = "<a href=\"#\" target=\"_blank\">Status Updates</a>";
 
 /* Google Ads */
 $data_ad_enable = false; //Set to true and update the information below. :)
-$data_ad_client = "ca-pub-6160285399625488";
-$data_ad_slot = "2146448098";
+$data_ad_client = "ca-pub-ID";
+$data_ad_slot = "ad-slot";
+
+/* Global Enable Vote */
+# Empty "Vote1" or "Vote2" to disable voting for specific vote sites.
+# If you use at least one vote site. Leave this enabled.
+$enable_vote = 1;
 
 $Status = array(
     array(
         "ID"       => "PvE1",
-        "Name"     => "Russia PvE|Kits|TPA|CallVote|Home|Vault|AirDrop",
-        "HostName" => "pve1.ut.justplayhere.com",
+        "Name"     => "France PvE 1 | Kits | TPA | CallVote |Home | Vault | AirDrop",
+        "HostName" => "ip or domain",
         "Port"     => "27015",
         "Mode"     => "PVE",
-        //unturned-servers.net API Key
-        "API"      => "",
+        "API"      => "", //unturned-servers.net API Key
         "Vote1"    => "http://unturned-servers.net/server/<ID NUMBER>/vote",
-        "Vote2"    => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"
+        "Vote2"    => ""
     ),
     array(
         "ID"       => "PvP1",
-        "Name"     => "Russia PvE|Kits|TPA|CallVote|Home|Vault|AirDrop",
-        "HostName" => "pvp1.ut.justplayhere.com",
+        "Name"     => "Russia PvP 1 | Kits | TPA | CallVote |Home | Vault | AirDrop",
+        "HostName" => "ip or domain",
         "Port"     => "27015",
         "Mode"     => "PVP",
-        //unturned-servers.net API Key
-        "API"      => "",
-        "Vote1"    => "http://unturned-servers.net/server/<ID NUMBER>/vote",
+        "API"      => "", //unturned-servers.net API Key
+        "Vote1"    => "",
         "Vote2"    => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"    
     ),
     array(
         "ID"       => "Arena1",
-        "Name"     => "Russia PvE|Kits|TPA|CallVote|Home|Vault|AirDrop",
-        "HostName" => "arena1.ut.justplayhere.com",
+        "Name"     => "PEI Arena 1 | Kits | TPA | CallVote |Home | Vault | AirDrop",
+        "HostName" => "ip or domain",
         "Port"     => "27015",
         "Mode"     => "ARENA",
-        //unturned-servers.net API Key
-        "API"      => "",
+        "API"      => "", //unturned-servers.net API Key
         "Vote1"    => "http://unturned-servers.net/server/<ID NUMBER>/vote",
         "Vote2"    => "http://unturnedsl.com/dedicated/show/<ID NUMBER>"
     )

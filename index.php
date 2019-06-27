@@ -198,7 +198,13 @@ for ($Config = 0; $Config < count($Status); $Config++) {
             <h1 class="panel-title center"><?php echo $Name; ?> <p class="small"><?php echo $HostName; ?></p></h1>
             <div class="btn-group btn-group-xs btn-group-justified click-actions" role="group">
               <span class="btn btn-xs btn-danger" style="width:70%;">Offline</span>
+              <?php
+              if($enable_vote == 1) {
+              ?>
               <a class="btn btn-default" style="width:30%;" role="button" data-toggle="collapse" href="#Unturned<?php echo $ID;?>Vote" aria-expanded="false" aria-controls="Unturned<?php echo $ID;?>Vote"><i class="fa fa-thumbs-up"></i>&nbsp;Vote</a>
+              <?php
+              }
+              ?>
             </div>
             <div class="btn-group btn-group-xs btn-group-justified click-actions" role="group">
               <a class="btn btn-info disabled" role="button" data-toggle="collapse" href="#Unturned<?php echo $ID;?>" aria-expanded="false" aria-controls="Unturned<?php echo $ID;?>">Click for More Info</a>
@@ -207,8 +213,18 @@ for ($Config = 0; $Config < count($Status); $Config++) {
           </div>
           <ul class="list-group">
             <div class="collapse" id="Unturned<?php echo $ID;?>Vote">
+              <?php
+              if(empty($vote1)) {
+              ?>
               <a href="<?php echo $Vote1; ?>" target="_blank" class="list-group-item list-group-item-warning"><i class="fa fa-comments"></i>&nbsp;Vote on unturned-servers.net</a>
+              <?php
+              }
+              if(empty($vote2)) {
+              ?>
               <a href="<?php echo $Vote2; ?>" target="_blank" class="list-group-item list-group-item-warning"><i class="fa fa-comments"></i>&nbsp;Vote on unturnedls.com</a>
+              <?php
+              }
+              ?>
             </div>
           </ul>
         </div>
