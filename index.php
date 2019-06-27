@@ -214,12 +214,12 @@ for ($Config = 0; $Config < count($Status); $Config++) {
           <ul class="list-group">
             <div class="collapse" id="Unturned<?php echo $ID;?>Vote">
               <?php
-              if(empty($Vote1)) {
+              if(empty($vote1)) {
               ?>
               <a href="<?php echo $Vote1; ?>" target="_blank" class="list-group-item list-group-item-warning"><i class="fa fa-comments"></i>&nbsp;Vote on unturned-servers.net</a>
               <?php
               }
-              if(empty($Vote2)) {
+              if(empty($vote2)) {
               ?>
               <a href="<?php echo $Vote2; ?>" target="_blank" class="list-group-item list-group-item-warning"><i class="fa fa-comments"></i>&nbsp;Vote on unturnedls.com</a>
               <?php
